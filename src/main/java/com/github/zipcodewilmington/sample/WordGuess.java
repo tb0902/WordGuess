@@ -56,8 +56,9 @@ public class WordGuess {
                     System.out.println("You win!");
                     break;
                 }
-                if (guessAmt == tries) {
+                if (guessAmt < tries) {
                     System.out.println("You lose."); // if the amount of tries equals the amount of guesses they have, they lose
+                    break;
                 }
             }
         }
