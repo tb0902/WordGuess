@@ -52,12 +52,12 @@ public class WordGuess {
                 tries++;
                 guessesLeft--;
 
-                if (wordHiderString == secretWord) {
-                    System.out.println("You have now been promoted!");
+                if (wordHiderString == secretWord) { // if wordHiderString is == the secret word, they've won the game and the loop breaks
+                    System.out.println("You win!");
                     break;
                 }
                 if (guessAmt == tries) {
-                    System.out.println("I win you loOoooooSE!");
+                    System.out.println("You lose."); // if the amount of tries equals the amount of guesses they have, they lose
                 }
             }
         }
